@@ -2,7 +2,7 @@
 <div id="readme-head" align="center">
     <h1 id="readme-title">Anime Sama.fr Desktop</h1>
     <h4 id="readme-description">The anime-sama.fr desktop app!</h4>
-	<h2>This app was developed by <a href="https://github.com/AlexAnimateMp4"> AlexAnimateMp4</a> and archived on Dec 10, 2023. I will try to continue to maintain the project.</h2>
+	<h2>⚠ This app was developed by <a href="https://github.com/AlexAnimateMp4"> AlexAnimateMp4</a> and archived on Dec 10, 2023. I will try to continue to maintain the project.</h2>
     <a id="readme-shield-last-commit" href="https://github.com/AlexAnimateMp4/anime-sama-fr-desktop/commits/master">
         <img id="readme-shield-last-commit-img" src="https://img.shields.io/github/last-commit/AlexAnimateMp4/anime-sama-fr-desktop" alt="Last commit" />
     </a>
