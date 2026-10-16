@@ -1171,9 +1171,45 @@ if (electron.app.requestSingleInstanceLock()) {
                         tray.setToolTip(displayName);
                         tray.setContextMenu(trayMenu);
                         const udpateStyle = () => {
-                            mainWindow.webContents.insertCSS("::-webkit-scrollbar {display: none;}div ::-webkit-scrollbar {display: block;}.mt-auto p a {color: #808080;text-decoration: none;transition-property: all;transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);transition-duration: 200ms;}.mt-auto p a:hover {color: #0EA5E9;}footer span a {color: #808080;text-decoration: none;transition-property: all;transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);transition-duration: 200ms;}footer span a:hover {color: #0EA5E9;}");
-                            mainWindow.webContents.executeJavaScript(`document.querySelectorAll("a").forEach(item => {item.removeAttribute("target");item.setAttribute("draggable", "false");});let replaceNavFooter = document.querySelector(".mt-auto p");if (replaceNavFooter) {replaceNavFooter.className = "font-semibold";replaceNavFooter.style.cssText = "color: white;text-align: center;";replaceNavFooter.innerHTML = "${String(getTranslation("FOOTER")).replace("#COPYLEFT#", "<span style='display:inline-block;transform: rotate(180deg);vertical-align: middle;'>©</span>").replace("#TIME#", new Date().getFullYear().toString() == packagejson.releaseYear ? packagejson.releaseYear : `${packagejson.releaseYear} - ${new Date().getFullYear()}`).replace("#NEW_LINE#", "<br>").replace("#NAME#", `<a id='credits_name' href='${String(linkProject)}' draggable='false'>${String(displayName)} Desktop</a>`).replace("#CODED#", "&lt;/&gt;").replace("#HEART#", "❤").replace("#AUTHOR#", `<a id='credits_author' href='${String(author.url)}' draggable='false'>${String(author.name)}</a>`).replace("#CONTRIBUTORS_START#", `<a id='credits_contributors' href='${String(linkProject)}/graphs/contributors' draggable='false'>`).replace("#CONTRIBUTORS_END#", "</a>")}";};const replaceFooter = document.querySelector("footer span");if (replaceFooter) {replaceFooter.className = "font-semibold";replaceFooter.style.cssText = "color: white;text-align: center;";replaceFooter.innerHTML = "${String(getTranslation("FOOTER")).replace("#COPYLEFT#", "<span style='display:inline-block;transform: rotate(180deg);vertical-align: middle;'>©</span>").replace("#TIME#", new Date().getFullYear().toString() == packagejson.releaseYear ? packagejson.releaseYear : `${packagejson.releaseYear} - ${new Date().getFullYear()}`).replace("#NEW_LINE#", "<br>").replace("#NAME#", `<a id='credits_name' href='${String(linkProject)}' draggable='false'>${String(displayName)} Desktop</a>`).replace("#CODED#", "&lt;/&gt;").replace("#HEART#", "❤").replace("#AUTHOR#", `<a id='credits_author' href='${String(author.url)}' draggable='false'>${String(author.name)}</a>`).replace("#CONTRIBUTORS_START#", `<a id='credits_contributors' href='${String(linkProject)}/graphs/contributors' draggable='false'>`).replace("#CONTRIBUTORS_END#", "</a>")}";};`);
-                        };
+                            {
+    const creditsYear = new Date().getFullYear().toString();
+    const creditsHTML = String(getTranslation("FOOTER"))
+        .replace("#COPYLEFT#", "<span style='display:inline-block;transform: rotate(180deg);vertical-align: middle;'>©</span>")
+        .replace("#TIME#", creditsYear == packagejson.releaseYear ? packagejson.releaseYear : `${packagejson.releaseYear} - ${creditsYear}`)
+        .replace("#NEW_LINE#", "<br>")
+        .replace("#NAME#", `<a id='credits_name' href='${String(linkProject)}' draggable='false'>${String(displayName)} Desktop</a>`)
+        .replace("#CODED#", "🛠️ Maintained ")
+        .replace("#HEART#", "❤")
+        .replace("#AUTHOR#", `<a id='credits_author' href='${String(author.url)}' draggable='false'>${String(author.name)}</a>`)
+        .replace("#CONTRIBUTORS_START#", `<a id='credits_contributors' href='${String(linkProject)}/graphs/contributors' draggable='false'>`)
+        .replace("#CONTRIBUTORS_END#", "</a>");
+
+    mainWindow.webContents.insertCSS("::-webkit-scrollbar {display: none;}div ::-webkit-scrollbar {display: block;}#desktop-credits {text-align: center;font-weight: 600;font-size: 12px;line-height: 1.5;color: #8ea8bb;padding: 0 12px;}#desktop-credits a {color: #808080;text-decoration: none;transition-property: all;transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);transition-duration: 200ms;}#desktop-credits a:hover {color: #0EA5E9;}");
+
+    mainWindow.webContents.executeJavaScript(`
+        (() => {
+            const bottom = document.querySelector("footer.asn-footer .container.bottom");
+            if (bottom) {
+                let credits = document.getElementById("desktop-credits");
+                if (!credits) {
+                    credits = document.createElement("div");
+                    credits.id = "desktop-credits";
+                    credits.innerHTML = ${JSON.stringify(creditsHTML)};
+                }
+                const brand = bottom.querySelector(".brand-inline");
+                if (brand) {
+                    if (brand.nextElementSibling !== credits) brand.after(credits);
+                } else if (!credits.isConnected) {
+                    bottom.appendChild(credits);
+                }
+            }
+            document.querySelectorAll("a").forEach(item => {
+                item.removeAttribute("target");
+                item.setAttribute("draggable", "false");
+            });
+        })();
+    `);
+} };
                         udpateStyle();
                         mainWindow.webContents.on("did-navigate", (event, url, httpResponseCode) => {
                             const validateUrl = new URL(url);
