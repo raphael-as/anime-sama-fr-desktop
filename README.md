@@ -1,8 +1,8 @@
 <a name="top"></a>
 <div id="readme-head" align="center">
-    <h1 id="readme-title">Anime Sama.fr Desktop</h1>
-    <h4 id="readme-description">The anime-sama.fr desktop app!</h4>
-	<h2>⚠ This app was developed by <a href="https://github.com/AlexAnimateMp4"> AlexAnimateMp4</a> and archived on Dec 10, 2023. I will try to continue to maintain the project.</h2>
+    <h1 id="readme-title">Anime Sama Desktop</h1>
+    <h4 id="readme-description">The anime-sama desktop app!</h4>
+	<h2>⚠ This app was developed by <a href="https://github.com/AlexAnimateMp4/anime-sama-fr-desktop/"> AlexAnimateMp4</a> and archived on Dec 9, 2023. I will try to continue to maintain the project.</h2>
     <a id="readme-shield-last-commit" href="https://github.com/AlexAnimateMp4/anime-sama-fr-desktop/commits/master">
         <img id="readme-shield-last-commit-img" src="https://img.shields.io/github/last-commit/AlexAnimateMp4/anime-sama-fr-desktop" alt="Last commit" />
     </a>
@@ -133,5 +133,9 @@
 </table>
 </div>
 <a name="readme-footer"></a>
-<p id="readme-footer" align="center">CL 2022 <a id="readme-footer-repo" href="https://github.com/AlexAnimateMp4/anime-sama-fr-desktop">Anime Sama.fr Desktop</a><br>&lt;/&gt; with ❤ by <a id="readme-footer-author" href="https://alexanimatemp4.me" target="_blank">Alex Animate Mp4</a> and <a id="readme-footer-contributors" href="https://github.com/AlexAnimateMp4/anime-sama-fr-desktop/graphs/contributors">contributors</a>.</p>
+<p id="readme-footer" align="center">
+  <a id="readme-footer-repo" href="https://github.com/raphael-as/anime-sama-fr-desktop">Anime Sama Desktop</a> · Licensed under <a href="https://github.com/raphael-as/anime-sama-fr-desktop/blob/main/LICENSE">MPL-2.0</a><br>
+  &lt;/&gt; with ❤ by <a id="readme-footer-author" href="https://github.com/AlexAnimateMp4">Alex Animate Mp4</a> and <a id="readme-footer-contributors" href="https://github.com/raphael-as/anime-sama-fr-desktop/graphs/contributors">contributors</a><br>
+  🛠️ Maintained by <a id="readme-footer-maintainer" href="https://github.com/raphael-as">raphael-as</a> since 2023
+</p>
 <a name="bottom"></a>
