@@ -37,37 +37,37 @@
         <img id="readme-shield-commit-activity-by-week-img" src="https://img.shields.io/github/commit-activity/w/raphael-as/anime-sama-fr-desktop" alt="Commit activity by week" />
     </a>
     <a id="readme-shield-commit-activity-by-month">
-        <img id="readme-shield-commit-activity-by-month-img" src="https://img.shields.io/github/commit-activity/m//anime-sama-fr-desktop" alt="Commit activity by month" />
+        <img id="readme-shield-commit-activity-by-month-img" src="https://img.shields.io/github/commit-activity/m/raphael-as/anime-sama-fr-desktop" alt="Commit activity by month" />
     </a>
     <a id="readme-shield-version">
-        <img id="readme-shield-version-img" src="https://img.shields.io/github/package-json/v//anime-sama-fr-desktop" alt="Version" />
+        <img id="readme-shield-version-img" src="https://img.shields.io/github/package-json/v/raphael-as/anime-sama-fr-desktop" alt="Version" />
     </a>
     <a id="readme-shield-main-file" href="./index.js">
-        <img id="readme-shield-main-file-img" src="https://img.shields.io/github/package-json/main//anime-sama-fr-desktop" alt="Main file" />
+        <img id="readme-shield-main-file-img" src="https://img.shields.io/github/package-json/main/raphael-as/anime-sama-fr-desktop" alt="Main file" />
     </a>
     <a id="readme-shield-languages">
-        <img id="readme-shield-languages-img" src="https://img.shields.io/github/languages/count//anime-sama-fr-desktop" alt="Languages" />
+        <img id="readme-shield-languages-img" src="https://img.shields.io/github/languages/count/raphael-as/anime-sama-fr-desktop" alt="Languages" />
     </a>
     <a id="readme-shield-top-language">
-        <img id="readme-shield-top-language-img" src="https://img.shields.io/github/languages/top//anime-sama-fr-desktop" alt="Top language" />
+        <img id="readme-shield-top-language-img" src="https://img.shields.io/github/languages/top/raphael-as/anime-sama-fr-desktop" alt="Top language" />
     </a>
     <a id="readme-shield-license" href="./LICENSE">
-        <img id="readme-shield-license-img" src="https://img.shields.io/github/license//anime-sama-fr-desktop" alt="License" />
+        <img id="readme-shield-license-img" src="https://img.shields.io/github/license/raphael-as/anime-sama-fr-desktop" alt="License" />
     </a>
     <a id="readme-shield-code-size">
-        <img id="readme-shield-code-size-img" src="https://img.shields.io/github/languages/code-size//anime-sama-fr-desktop" alt="Code size" />
+        <img id="readme-shield-code-size-img" src="https://img.shields.io/github/languages/code-size/raphael-as/anime-sama-fr-desktop" alt="Code size" />
     </a>
     <a id="readme-shield-repo-size">
-        <img id="readme-shield-repo-size-img" src="https://img.shields.io/github/repo-size//anime-sama-fr-desktop" alt="Repo size" />
+        <img id="readme-shield-repo-size-img" src="https://img.shields.io/github/repo-size/raphael-as/anime-sama-fr-desktop" alt="Repo size" />
     </a>
     <a id="readme-shield-watchers" href="https://github.com//anime-sama-fr-desktop/watchers">
-        <img id="readme-shield-watchers-img" src="https://img.shields.io/github/watchers//anime-sama-fr-desktop" alt="Watchers" />
+        <img id="readme-shield-watchers-img" src="https://img.shields.io/github/watchers/raphael-as/anime-sama-fr-desktop" alt="Watchers" />
     </a>
     <a id="readme-shield-stars" href="https://github.com//anime-sama-fr-desktop/stargazers">
-        <img id="readme-shield-stars-img" src="https://img.shields.io/github/stars//anime-sama-fr-desktop" alt="Stars" />
+        <img id="readme-shield-stars-img" src="https://img.shields.io/github/stars/raphael-as/anime-sama-fr-desktop" alt="Stars" />
     </a>
     <a id="readme-shield-forks" href="https://github.com//anime-sama-fr-desktop/network/members">
-        <img id="readme-shield-forks-img" src="https://img.shields.io/github/forks//anime-sama-fr-desktop" alt="Forks" />
+        <img id="readme-shield-forks-img" src="https://img.shields.io/github/forks/raphael-as/anime-sama-fr-desktop" alt="Forks" />
     </a>
 </div>
 <a name="readme-body"></a>
