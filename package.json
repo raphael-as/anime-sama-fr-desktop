@@ -1,29 +1,30 @@
 {
-    "name": "anime-sama-fr-desktop",
-    "displayName": "Anime Sama.fr",
-    "exeName": "ANIME_SAMA_FR",
+    "name": "anime-sama-desktop",
+    "displayName": "Anime Sama",
+    "exeName": "ANIME_SAMA",
     "releaseYear": "2023",
-    "protocol": "anime-sama-fr",
+    "protocol": "anime-sama",
     "version": "0.1.1",
-    "description": "The anime-sama.fr desktop app!",
+    "description": "The anime-sama desktop app!",
     "keywords": [
         "javascript",
         "nodejs",
         "electron",
         "desktop-app",
         "discord-rich-presence",
-        "anime-sama-fr"
+        "anime-sama-fr",
+        "anime-sama"
     ],
-    "url": "https://anime-sama.fr",
-    "homepage": "https://github.com/AlexAnimateMp4/anime-sama-fr-desktop#readme",
+    "url": "https://anime-sama.to",
+    "homepage": "https://github.com/raphael-as/anime-sama-fr-desktop#readme",
     "bugs": {
-        "url": "https://github.com/AlexAnimateMp4/anime-sama-fr-desktop/issues"
+        "url": "https://github.com/raphael-as/anime-sama-fr-desktop/issues"
     },
     "license": "MPL-2.0",
     "author": {
-        "name": "Alex Animate Mp4",
-        "email": "contact@alexanimatemp4.me",
-        "url": "https://alexanimatemp4.me"
+        "name": "Raphaël",
+        "email": "raphaelas.pro@gmail.com",
+        "url": "https://github.com/raphael-as"
     },
     "contributors": [],
     "files": [
@@ -41,19 +42,19 @@
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/AlexAnimateMp4/anime-sama-fr-desktop.git"
+        "url": "https://github.com/raphael-as/anime-sama-fr-desktop.git"
     },
     "scripts": {
-        "install": "npm i -D electron electron-builder && npm i electron-store",
+        "setup": "npm i -D electron electron-builder && npm i electron-store",
         "start": "electron index.js",
         "build": "node --trace-warnings --trace-uncaught build.js"
     },
     "DISCORD_CLIENT_ID": "1071511490764476446",
     "devDependencies": {
-        "electron": "^23.0.0",
+        "electron": "^23.3.13",
         "electron-builder": "^23.6.0"
     },
     "dependencies": {
-        "electron-store": "^8.1.0"
+        "electron-store": "^8.2.0"
     }
 }

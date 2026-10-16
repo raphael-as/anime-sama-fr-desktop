@@ -110,7 +110,7 @@ if (electron.app.requestSingleInstanceLock()) {
                 SAVE_WINDOW_SIZE: false,
                 ALWAYS_ON_TOP: false,
                 ADBLOCK: false,
-                DISCORD_RICH_PRESENCE: false
+                DISCORD_RICH_PRESENCE: true
             }
         };
         const settings = new electronStore({
