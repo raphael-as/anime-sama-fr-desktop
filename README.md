@@ -34,7 +34,7 @@
         <img id="readme-shield-closed-pull-requests-img" src="https://img.shields.io/github/issues-pr-closed-raw/raphael-as/anime-sama-fr-desktop" alt="Closed pull requests" />
     </a>
     <a id="readme-shield-commit-activity-by-week">
-        <img id="readme-shield-commit-activity-by-week-img" src="https://img.shields.io/github/commit-activity/w//anime-sama-fr-desktop" alt="Commit activity by week" />
+        <img id="readme-shield-commit-activity-by-week-img" src="https://img.shields.io/github/commit-activity/w/raphael-as/anime-sama-fr-desktop" alt="Commit activity by week" />
     </a>
     <a id="readme-shield-commit-activity-by-month">
         <img id="readme-shield-commit-activity-by-month-img" src="https://img.shields.io/github/commit-activity/m//anime-sama-fr-desktop" alt="Commit activity by month" />
